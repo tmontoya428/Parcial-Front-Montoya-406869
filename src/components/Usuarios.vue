@@ -21,17 +21,6 @@
     <div v-else class="no-roles-message">
       ⚠️ Primero debes crear al menos un rol para agregar usuarios.
     </div>
-
-    <ul class="users-list">
-      <li v-for="u in users" :key="u.id" class="user-item">
-        <div class="user-info">
-          {{ u.nombres }} {{ u.apellidos }} - {{ u.rol.nombre }}
-        </div>
-        <div class="user-details">
-          ID: {{ u.identificacion }}, Correo: {{ u.correo }}
-        </div>
-      </li>
-    </ul>
   </div>
 </template>
 

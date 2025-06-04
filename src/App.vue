@@ -1,7 +1,8 @@
 <template>
 <nav>
 <router-link to="/users" class="home"> 👤 Usuarios</router-link> |
-<router-link to="/roles" class="home">📙 Roles</router-link>
+<router-link to="/roles" class="home">🎭 Roles</router-link>
+<router-link to="/mostrar" class="home">📙 Creaciones</router-link>
 </nav>
 <router-view />
 </template>

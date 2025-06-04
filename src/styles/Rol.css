@@ -16,7 +16,7 @@ h2 {
 
 /* Formulario */
 .form-container {
-  background: linear-gradient(135deg, rgba(88,24,69,0.9), rgba(144,12,63,0.8));
+  background: linear-gradient(135deg, rgba(189, 170, 228, 0.9), rgba(88, 145, 230, 0.8));
   padding: 50px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);

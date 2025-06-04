@@ -1,0 +1,17 @@
+.mostrar-container {
+  padding: 30px;
+  width: 620px;
+  height: 620px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+h3 {
+  margin: 16px 0 8px;
+}
+
+.lista {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0 0 16px;
+}

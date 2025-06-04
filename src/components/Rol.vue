@@ -8,13 +8,6 @@
         <button type="submit">Agregar Rol</button>
       </div>
     </form>
-
-    <ul class="roles-list">
-      <li v-for="r in roles" :key="r.id" class="role-item">
-        <div class="role-name">{{ r.nombre }}</div>
-        <div class="role-description">{{ r.descripcion }}</div>
-      </li>
-    </ul>
   </div>
 </template>
 
