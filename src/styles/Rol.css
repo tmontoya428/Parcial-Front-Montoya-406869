@@ -1,0 +1,169 @@
+/* Estilos generales */
+.books-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* Formulario */
+.form-container {
+  background: linear-gradient(135deg, rgba(88,24,69,0.9), rgba(144,12,63,0.8));
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button[type="submit"]:hover {
+  background-color: #34495e;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Lista de libros */
+.books-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.book-item {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.book-item::before {
+  content: '📚';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  opacity: 0.2;
+}
+
+.book-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.book-title {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.book-author {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.book-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.book-year {
+  background-color: #f8f9fa;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.book-genre {
+  color: #9b59b6;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 30px;
+  }
+
+  .books-list {
+    grid-template-columns: 1fr;
+  }
+
+  .book-item {
+    margin-bottom: 15px;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.book-item {
+  animation: fadeIn 0.5s ease-out forwards;
+}
